@@ -2,13 +2,63 @@ body, html {
   font-family: 'Roboto';
   max-width: 414px;
   margin: auto;
+  font-size: 15px;
 }
 
 header, section {
-  margin: 2em;
+  margin: 1em;
 }
 
-h2 {
+img {
+  height: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.titre {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.titre--shrikhand {
   font-family: 'Shrikhand', cursive;
+}
+
+.soustitre {
+  font-size: 15px;
+  font-weight: lighter;
+  color: grey;
+}
+
+.localisation, .nom-resto, .etape, .element-footer {
+  font-weight: bold;
+}
+
+.localisation {
+  padding: 15px 50px 15px 50px;
+  background-color: lightgrey;
+}
+
+input {
+  border: none;
+  color: gray;
+}
+
+button {
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px;
+  background-color: #9356DC;
+}
+
+.etape {
+  padding: 15px;
+  border: 1px solid green;
+  border-radius: 15px;
+  background-color: gray;
 }
 /*# sourceMappingURL=main.css.map */
