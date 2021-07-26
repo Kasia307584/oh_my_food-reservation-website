@@ -1,0 +1,14 @@
+body, html {
+  font-family: 'Roboto';
+  max-width: 414px;
+  margin: auto;
+}
+
+header, section {
+  margin: 2em;
+}
+
+h2 {
+  font-family: 'Shrikhand', cursive;
+}
+/*# sourceMappingURL=main.css.map */
