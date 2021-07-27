@@ -14,6 +14,11 @@ a {
     text-decoration: none;
     color: black;
 }
+
+
+.logo {
+    height: 40px;
+}
 .titre {
     font-size: 20px;
     font-weight: bold;
@@ -33,10 +38,6 @@ a {
     padding: 15px 50px 15px 50px;
     background-color: lightgrey;
 }
-input {
-    border: none;
-    color: gray;
-}
 button {
     border: none;
     border-radius: 50px;
@@ -44,9 +45,70 @@ button {
     padding: 15px;
     background-color: #9356DC;
 }
+
+
 .etape {
-    padding: 15px;
-    border: 1px solid green;
+    display: flex;
+    margin-top: 10px;
+
+    &__info {
+        padding: 15px;
+        border-radius: 20px;
+        background-color: lightgrey;
+    
+        &:nth-child(2) {
+            order: 2;
+        }
+        & > i {
+            padding: 10px;
+        }
+    }
+
+    &__num {
+        padding: 8px;
+        border-radius: 50px;
+        background-color: #9356DC;
+        color: white;
+        margin-right: -5px;
+    
+        &:nth-child(1) {
+            order: 1;
+        }
+    }
+}
+
+
+
+
+.fiche-resto {
+    border: 1px solid black;
     border-radius: 15px;
-    background-color: gray;
+    width: 80%;
+    margin-bottom: 1em;
+        &__image {
+            height: 200px;
+            background-size: cover; 
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+                &--gout {
+                    background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+                }
+                &--enchantee {
+                    background-image: url(images/stil-u2Lp8tXIcjw-unsplash.jpg);
+                }
+                &--francaise {
+                    background-image: url(images/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+                }
+                &--sens {
+                    background-image: url(images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+                }
+        }
+        &__etiquette {
+            background-color:cadetblue;
+            padding: 15px;
+            margin-left: 250px;
+            margin-right: 40px;
+            margin-top: 10px;
+        }
 }
