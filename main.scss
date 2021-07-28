@@ -1,78 +1,86 @@
+$color-primaire: #9356DC;
+$color-secondaire: #FF79DA;
+$color-tertiaire: #99E2D0;
+$color-fond: #f9f9f9;
+
 body, html {
-    font-family: 'Roboto';
     max-width: 414px;
     margin: auto;
-    font-size: 15px;
+    font-family: 'Roboto';
+    font-size: 1em;
+    font-weight: bold;
 }
 header, section {
     margin: 1em;
-}
-img {
-    height: 80px;
 }
 a {
     text-decoration: none;
     color: black;
 }
+button {
+    border: none;
+    border-radius: 1.5em;
+    color: white;
+    padding: 1em;
+    background-color: $color-primaire;
+    font-size: 1em;
+    font-family: 'Roboto';
+}
 
 
 .logo {
-    height: 40px;
+    height: 2em;
+}
+.recherche {
+    background-color: $color-fond;
 }
 .titre {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 1.5em;
     &--shrikhand {
         font-family: 'Shrikhand', cursive;
     }
 }
 .soustitre {
-    font-size: 15px;
     font-weight: lighter;
-    color: grey;
-}
-.localisation, .nom-resto, .etape, .element-footer {
-    font-weight: bold;
+    color: darken($color-fond, 50%);
 }
 .localisation {
-    padding: 15px 50px 15px 50px;
-    background-color: lightgrey;
+    background-color: darken($color-fond, 5%);
+    color: darken($color-fond, 70%);
+    text-align: center;
+    padding: 1em;
+
+    & > i {
+        padding-right: 1em;
+    }
 }
-button {
-    border: none;
-    border-radius: 50px;
-    color: white;
-    padding: 15px;
-    background-color: #9356DC;
-}
+
 
 
 .etape {
-    display: flex;
-    margin-top: 10px;
-
-    &__info {
-        padding: 15px;
-        border-radius: 20px;
-        background-color: lightgrey;
-    
-        &:nth-child(2) {
-            order: 2;
-        }
-        & > i {
-            padding: 10px;
-        }
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 1.2em;
+    background-color: $color-fond;
+       
+    & > i {
+        padding: 0.7em;
+        color: darken($color-fond, 50%)
     }
-
-    &__num {
-        padding: 8px;
-        border-radius: 50px;
-        background-color: #9356DC;
-        color: white;
-        margin-right: -5px;
     
-        &:nth-child(1) {
-            order: 1;
+    &__num {
+        padding: 0.3em 0.6em;
+        border-radius: 1.5em;
+        background-color: $color-primaire;
+        color: white;
+        margin-left: -2em;
+        font-weight: lighter;
+        font-size: 0.8em;
+    }
+    &--active {
+        background-color: lighten($color-primaire, 36%);
+        & > i {
+            color: $color-primaire;
         }
     }
 }
@@ -81,15 +89,14 @@ button {
 
 
 .fiche-resto {
-    border: 1px solid black;
-    border-radius: 15px;
-    width: 80%;
+    display: block;
+    border-radius: 1em;
     margin-bottom: 1em;
         &__image {
-            height: 200px;
+            height: 13em;
             background-size: cover; 
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
 
                 &--gout {
                     background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -105,10 +112,32 @@ button {
                 }
         }
         &__etiquette {
-            background-color:cadetblue;
-            padding: 15px;
-            margin-left: 250px;
-            margin-right: 40px;
-            margin-top: 10px;
+            background-color: $color-tertiaire;
+            color: darken($color-tertiaire, 35%);
+            padding: 0.5em;
+            margin-left: 17em;
+            margin-right: 1em;
+            text-align: center;
+            border-radius: 0.2em;
         }
+        &__description {
+            display: flex;
+            justify-content: space-between;
+        }
+}
+.coeur:nth-child(2) {
+    align-self: center;
+    padding-right: 1em;
+}
+.coeur > i {
+   font-size: 1.5em;
+   color: darken($color-fond, 50%);
+}
+.nom-resto {
+    margin-bottom: 0.3em;
+}
+.localisation-resto {
+    margin-top: 0;
+    font-weight: lighter;
+    color: darken($color-fond, 50%);
 }
