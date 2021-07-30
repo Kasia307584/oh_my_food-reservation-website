@@ -10,9 +10,6 @@ body, html {
     font-size: 1em;
     font-weight: bold;
 }
-header, section {
-    margin: 1em;
-}
 a {
     text-decoration: none;
     color: black;
@@ -26,40 +23,55 @@ button {
     font-size: 1em;
     font-family: 'Roboto';
 }
+header {
+    text-align: center;
+    padding: 1.5em 0 0.5em 0;
+}
+.titre {
+    font-size: 1.5em;
 
+    &--shrikhand {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.1em;
+        font-weight: lighter;
+    }
+}
 
 .logo {
     height: 2em;
 }
 .recherche {
     background-color: $color-fond;
-}
-.titre {
-    font-size: 1.5em;
-    &--shrikhand {
-        font-family: 'Shrikhand', cursive;
+    text-align: center;
+    padding-bottom: 3em;
+
+    & > .titre {
+        margin: 1.5em 3em 0 3em;
     }
-}
-.soustitre {
-    font-weight: lighter;
-    color: darken($color-fond, 50%);
 }
 .localisation {
     background-color: darken($color-fond, 5%);
     color: darken($color-fond, 70%);
-    text-align: center;
+    box-shadow: inset 0px 2px 5px -2px rgba(128, 128, 128, 0.5);
     padding: 1em;
 
     & > i {
         padding-right: 1em;
     }
 }
+.soustitre {
+    font-weight: lighter;
+    color: darken($color-fond, 50%);
+    margin: 1em 2em 2em 2em;
+}
 
-
-
+.fonctionnement {
+    padding: 1em 1em 3em 1em;
+}
 .etape {
-    margin-top: 1em;
     padding: 1em;
+    margin-left: 0.5em;
+    margin-top: 1em;
     border-radius: 1.2em;
     background-color: $color-fond;
        
@@ -67,7 +79,9 @@ button {
         padding: 0.7em;
         color: darken($color-fond, 50%)
     }
-    
+    & > .fa-mobile-alt {
+        padding-right: 1em;
+    }
     &__num {
         padding: 0.3em 0.6em;
         border-radius: 1.5em;
@@ -85,59 +99,94 @@ button {
     }
 }
 
-
-
-
+.restaurants {
+    background-color: $color-fond;
+    padding: 1em 1em 3em 1em;
+}
 .fiche-resto {
     display: block;
-    border-radius: 1em;
+    margin: auto;
     margin-bottom: 1em;
-        &__image {
-            height: 13em;
-            background-size: cover; 
-            border-top-left-radius: 1em;
-            border-top-right-radius: 1em;
+    border-radius: 1em;
+    box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
 
-                &--gout {
-                    background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-                }
-                &--enchantee {
-                    background-image: url(images/stil-u2Lp8tXIcjw-unsplash.jpg);
-                }
-                &--francaise {
-                    background-image: url(images/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-                }
-                &--sens {
-                    background-image: url(images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-                }
+    &__image {
+        height: 160px;
+        background-size: cover;
+        background-position: 0 -50px;
+        background-repeat: no-repeat;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        position: relative;
+
+        &--gout {
+            background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
         }
-        &__etiquette {
-            background-color: $color-tertiaire;
-            color: darken($color-tertiaire, 35%);
-            padding: 0.5em;
-            margin-left: 17em;
-            margin-right: 1em;
-            text-align: center;
-            border-radius: 0.2em;
+        &--enchantee {
+            background-image: url(images/stil-u2Lp8tXIcjw-unsplash.jpg);
+            background-position: 0 -145px;
         }
-        &__description {
-            display: flex;
-            justify-content: space-between;
+        &--francaise {
+            background-image: url(images/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
         }
-}
-.coeur:nth-child(2) {
-    align-self: center;
-    padding-right: 1em;
-}
-.coeur > i {
-   font-size: 1.5em;
-   color: darken($color-fond, 50%);
+        &--sens {
+            background-image: url(images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        }
+    }
+    &__etiquette {
+        background-color: $color-tertiaire;
+        color: darken($color-tertiaire, 35%);
+        padding: 0.2em 0.6em;
+        margin-left: 14em;
+        margin-top: 1em;
+        text-align: center;
+        border-radius: 0.2em;
+        position: absolute;
+    }
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0.5em;
+    }
 }
 .nom-resto {
-    margin-bottom: 0.3em;
+    margin-bottom: 0.1em;
 }
 .localisation-resto {
     margin-top: 0;
     font-weight: lighter;
     color: darken($color-fond, 50%);
+}
+.coeur {
+    &:nth-child(2) {
+        align-self: center;
+        padding-right: 1em;
+    }
+    & > i {
+        font-size: 1.5em;
+        color: darken($color-fond, 50%);
+    }
+}
+
+footer {
+    background-color: darken($color-fond, 75%);
+    color: white;
+    padding: 1em 1em 3em 1em;
+
+    & > div {
+        font-size: 0.9em;
+        margin-top: 0.5em;
+    }
+    & > div > i {
+        padding-right: 0.5em;
+    }
+    & > .footer-element {
+        font-weight: lighter;
+    }
+    & > div > .fa-utensils {
+        padding-right: 0.6em;
+    }
+    & > div > .fa-handshake {
+        font-size: 0.8em;
+    }
 }
