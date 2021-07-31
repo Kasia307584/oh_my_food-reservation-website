@@ -1,0 +1,120 @@
+$color-primaire: #9356DC;
+$color-secondaire: #FF79DA;
+$color-tertiaire: #99E2D0;
+$color-fond: #f9f9f9;
+
+body, html {
+    max-width: 414px;
+    margin: auto;
+    font-family: 'Roboto';
+    font-size: 1em;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+button {
+    border: none;
+    border-radius: 1.5em;
+    color: white;
+    padding: 1em 1.5em 1em 1.5em;
+    background-color: $color-primaire;
+    font-size: 1em;
+    font-family: 'Roboto';
+}
+p {
+    margin: 0;
+}
+.titre {
+    font-family: 'Shrikhand', cursive;
+    font-weight: lighter;
+
+    &--restaurant {
+        font-size: 1.5em;
+    }
+    &--footer {
+        font-size: 1.1em;
+    }
+}
+
+.fleche {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5em 1em 1.2em 1em;
+
+    & > i {
+        font-size: 1.2em;
+    }
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: -2.5em;
+    padding-bottom: 0.5em;
+
+    & > img {
+        height: 1.7em;
+    }
+}
+.image {
+    background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    height: 160px;
+    background-size: cover;
+    background-position: 0 -50px;
+    background-repeat: no-repeat;
+}
+.contenu-principale {
+    padding: 1em;
+}
+.entete {
+    display: flex;
+    justify-content: space-between;
+
+    & > i {
+        align-self: center;
+        padding-right: 1em;
+        font-size: 1.5em;
+    }
+}
+.categorie-menu {
+    color: darken($color-fond, 50%);
+}
+.element-menu {
+    padding: 0.5em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: space-between;
+
+    &__supplement {
+        font-weight: lighter;
+        padding-top: 0.3em;
+    }
+    &__prix {
+        align-self: flex-end;
+    }
+}
+footer {
+    background-color: darken($color-fond, 75%);
+    color: white;
+    padding: 1em 1em 3em 1em;
+
+    & > div {
+        font-size: 0.9em;
+        margin-top: 0.5em;
+    }
+    & > div > i {
+        padding-right: 0.5em;
+    }
+    & > .footer-element {
+        font-weight: lighter;
+    }
+    & > div > .fa-utensils {
+        padding-right: 0.6em;
+    }
+    & > div > .fa-handshake {
+        font-size: 0.8em;
+    }
+}

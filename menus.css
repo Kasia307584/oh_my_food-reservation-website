@@ -1,0 +1,153 @@
+body, html {
+  max-width: 414px;
+  margin: auto;
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  border-radius: 1.5em;
+  color: white;
+  padding: 1em 1.5em 1em 1.5em;
+  background-color: #9356DC;
+  font-size: 1em;
+  font-family: 'Roboto';
+}
+
+p {
+  margin: 0;
+}
+
+.titre {
+  font-family: 'Shrikhand', cursive;
+  font-weight: lighter;
+}
+
+.titre--restaurant {
+  font-size: 1.5em;
+}
+
+.titre--footer {
+  font-size: 1.1em;
+}
+
+.fleche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1.5em 1em 1.2em 1em;
+}
+
+.fleche > i {
+  font-size: 1.2em;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -2.5em;
+  padding-bottom: 0.5em;
+}
+
+.logo > img {
+  height: 1.7em;
+}
+
+.image {
+  background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  height: 160px;
+  background-size: cover;
+  background-position: 0 -50px;
+  background-repeat: no-repeat;
+}
+
+.contenu-principale {
+  padding: 1em;
+}
+
+.entete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.entete > i {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 1em;
+  font-size: 1.5em;
+}
+
+.categorie-menu {
+  color: #7a7a7a;
+}
+
+.element-menu {
+  padding: 0.5em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  -webkit-box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
+          box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.element-menu__supplement {
+  font-weight: lighter;
+  padding-top: 0.3em;
+}
+
+.element-menu__prix {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+footer {
+  background-color: #3a3a3a;
+  color: white;
+  padding: 1em 1em 3em 1em;
+}
+
+footer > div {
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+
+footer > div > i {
+  padding-right: 0.5em;
+}
+
+footer > .footer-element {
+  font-weight: lighter;
+}
+
+footer > div > .fa-utensils {
+  padding-right: 0.6em;
+}
+
+footer > div > .fa-handshake {
+  font-size: 0.8em;
+}
+/*# sourceMappingURL=menus.css.map */

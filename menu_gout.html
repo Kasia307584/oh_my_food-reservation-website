@@ -3,73 +3,105 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="menus.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <title>ohmyfood</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>La palette du goût</title>
     </head>
 
     <body>
-        <header>
-            <i class="fas fa-arrow-left"></i><img src="images/ohmyfood.png" alt="logo">
+        <header> <!-- deux divs creés pour mettre chacun en flex : un flex-start et un center (poussé plus haut par margin négatif)-->
+            <div class="fleche"><i class="fas fa-arrow-left"></i></div>
+            <div class="logo"><img src="images/ohmyfood.png" alt="logo"></div>
         </header>
 
         <section>
-            <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="repas">
-            <h1>La palette du goût</h1><i class="far fa-heart"></i>
+            <div class="image"></div>
         </section>
 
-        <section>
-            <div class="categorie-menu">ENTRÉES</div>
+        <section class="contenu-principal">
+            <div class="entete">
+                <h1 class="titre titre--restaurant">La palette du goût</h1>
+                <i class="far fa-heart"></i>
+            </div>
+            <p class="categorie-menu">ENTRÉES</p>
                 <div class="element-menu">
-                    <div class="element-menu__nom">Fricassée d'escargot</div>
-                    <div class="element-menu__supplement">Au piment d'Espelette</div><span class="element-menu__prix">25€</span>
+                    <div>
+                        <p class="element-menu__nom">Fricassée d'escargot</p>
+                        <p class="element-menu__supplement">Au piment d'Espelette</p>
+                    </div>
+                    <span class="element-menu__prix">25€</span>
                 </div>
                 <div class="element-menu">
-                    <div class="element-menu__nom">Foie gras de canard mi-cuit</div>
-                    <div class="element-menu__supplement">Et ses copeaux de truffe noire</div><span class="element-menu__prix">35€</span>
+                    <div>
+                        <p class="element-menu__nom">Foie gras de canard mi-cuit</p>
+                        <p class="element-menu__supplement">Et ses copeaux de truffe noire</p>
+                    </div>
+                    <span class="element-menu__prix">35€</span>
                 </div>
                 <div class="element-menu">
-                    <div class="element-menu__nom">Oeuf au plat</div>
-                    <div class="element-menu__supplement">Assaisonné à la truffe sur lit de caviar</div><span class="element-menu__prix">20€</span>
+                    <div>
+                        <p class="element-menu__nom">Oeuf au plat</p>
+                        <p class="element-menu__supplement">Assaisonné à la truffe sur lit de caviar</p>
+                    </div>
+                    <span class="element-menu__prix">20€</span>
                 </div>
-            <div class="categorie-menu">PLATS</div>
+            <p class="categorie-menu">PLATS</p>
                 <div class="element-menu">
-                    <div class="element-menu__nom">Filet de boeuf aux herbes</div>
-                    <div class="element-menu__supplement">Accompagné de sa ribambelle de légumes</div><span class="element-menu__prix">40€</span>
-                </div>
-                <div class="element-menu">
-                    <div class="element-menu__nom">Parmentier de queue de boeuf</div>
-                    <div class="element-menu__supplement">À la truffe noire sur sa purée de panais</div><span class="element-menu__prix">35€</span>
-                </div>
-                <div class="element-menu">
-                    <div class="element-menu__nom">Filet de turbot</div>
-                    <div class="element-menu__supplement">Aux agrumes</div><span class="element-menu__prix">44€</span>
-                </div>
-            <div class="categorie-menu">DESSERTS</div>
-                <div class="element-menu">
-                    <div class="element-menu__nom">Paris-Brest</div>
-                    <div class="element-menu__supplement">Revisité</div><span class="element-menu__prix">18€</span>
+                    <div>
+                        <p class="element-menu__nom">Filet de boeuf aux herbes</p>
+                        <p class="element-menu__supplement">Accompagné de sa ribambelle de légumes</p>
+                    </div>
+                    <span class="element-menu__prix">40€</span>
                 </div>
                 <div class="element-menu">
-                    <div class="element-menu__nom">Macaron au chocolat d'exception</div>
-                    <div class="element-menu__supplement">Et glace à la vanille de Madagascar</div><span class="element-menu__prix">22€</span>
+                    <div>
+                        <p class="element-menu__nom">Parmentier de queue de boeuf</p>
+                        <p class="element-menu__supplement">À la truffe noire sur sa purée de panais</p>
+                    </div>
+                    <span class="element-menu__prix">35€</span>
+                </div>
+                <div class="element-menu">
+                    <div>
+                        <p class="element-menu__nom">Filet de turbot</p>
+                        <p class="element-menu__supplement">Aux agrumes</p>
+                    </div>
+                    <span class="element-menu__prix">44€</span>
+                </div>
+            <p class="categorie-menu">DESSERTS</p>
+                <div class="element-menu">
+                    <div>
+                        <p class="element-menu__nom">Paris-Brest</p>
+                        <p class="element-menu__supplement">Revisité</p>
+                    </div>
+                    <span class="element-menu__prix">18€</span>
+                </div>
+                <div class="element-menu">
+                    <div>
+                        <p class="element-menu__nom">Macaron au chocolat d'exception</p>
+                        <p class="element-menu__supplement">Et glace à la vanille de Madagascar</p>
+                    </div>
+                    <span class="element-menu__prix">22€</span>
+                </div>
+                <div class="element-menu">
+                    <div>
+                        <p class="element-menu__nom">Mousse au chocolat</p>
+                        <p class="element-menu__supplement">Au piment d'Espelette et à la truffe noire</p>
+                    </div>
+                    <span class="element-menu__prix">23€</span>
                 </div>
             <button>Commander</button>
         </section>
 
         <footer>
-            <h2 class="titre titre--shrikhand">ohmyfood</h2>
-            <div class="element-footer"><i class="fas fa-utensils"></i>Proposer un restaurant</div>
-            <div class="element-footer"><i class="far fa-handshake"></i>Devenir partenaire</div>
-            <div class="element-footer">Mentions légales</div>
-            <div class="element-footer">Contact</div>
+            <h2 class="titre titre--footer">ohmyfood</h2>
+            <div><i class="fas fa-utensils"></i>Proposer un restaurant</div>
+            <div><i class="far fa-handshake"></i>Devenir partenaire</div>
+            <div class="footer-element">Mentions légales</div>
+            <div class="footer-element">Contact</div>
         </footer>
     </body>
 </html>
