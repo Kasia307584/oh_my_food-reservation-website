@@ -15,9 +15,9 @@ button {
   border: none;
   border-radius: 1.5em;
   color: white;
-  padding: 1em 1.5em 1em 1.5em;
+  padding: 1em 2em;
   background-color: #9356DC;
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: 'Roboto';
 }
 
@@ -31,7 +31,7 @@ p {
 }
 
 .titre--restaurant {
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 .titre--footer {
@@ -64,14 +64,13 @@ p {
 }
 
 .logo > img {
-  height: 1.7em;
+  height: 1.6em;
 }
 
 .image {
   background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  height: 160px;
+  height: 250px;
   background-size: cover;
-  background-position: 0 -50px;
   background-repeat: no-repeat;
 }
 
@@ -86,6 +85,11 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: -50px;
+  border-radius: 2em 2em 0 0;
+  background-color: white;
+  padding-left: 1em;
+  margin-bottom: -1em;
 }
 
 .entete > i {
@@ -98,6 +102,14 @@ p {
 
 .categorie-menu {
   color: #7a7a7a;
+  margin-left: 1em;
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+.ligne {
+  margin: 0.3em 85% 0.5em 1em;
+  border: 1.5px solid #99E2D0;
 }
 
 .element-menu {
@@ -112,16 +124,25 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 1em;
 }
 
 .element-menu__supplement {
   font-weight: lighter;
+  font-size: 0.9em;
   padding-top: 0.3em;
 }
 
 .element-menu__prix {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  font-size: 0.9em;
+  padding-right: 0.5em;
+}
+
+.bouton {
+  text-align: center;
+  margin: 2em 0 3em 0;
 }
 
 footer {
