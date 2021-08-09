@@ -22,6 +22,9 @@ button {
     background-color: $color-primaire;
     font-size: 1em;
     font-family: 'Roboto';
+    &:hover {
+        background: radial-gradient(ellipse at top, $color-secondaire, $color-primaire);
+    }
 }
 header {
     text-align: center;
@@ -117,7 +120,7 @@ header {
         background-repeat: no-repeat;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
-        position: relative;
+        padding-top: 1em;
 
         &--gout {
             background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -137,11 +140,10 @@ header {
         background-color: $color-tertiaire;
         color: darken($color-tertiaire, 35%);
         padding: 0.2em 0.6em;
-        margin-left: 14em;
-        margin-top: 1em;
+        margin-left: 15em;
+        width: 4em;
         text-align: center;
         border-radius: 0.2em;
-        position: absolute;
     }
     &__description {
         display: flex;
@@ -164,7 +166,14 @@ header {
     }
     & > i {
         font-size: 1.5em;
-        color: darken($color-fond, 50%);
+        color: $color-fond;
+        text-shadow: 0 0 3px darken($color-fond, 50%);
+        transition: all .5s ease-out;
+        &:hover {
+            text-shadow: none;
+            color: $color-primaire;
+            // color: radial-gradient(ellipse at top, $color-secondaire, $color-primaire);
+        }
     }
 }
 

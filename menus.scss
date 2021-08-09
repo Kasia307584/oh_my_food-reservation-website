@@ -22,6 +22,9 @@ button {
     background-color: $color-primaire;
     font-size: 0.9em;
     font-family: 'Roboto';
+    &:hover {
+        background: radial-gradient(ellipse at top, $color-secondaire, $color-primaire);
+    }
 }
 p {
     margin: 0;
@@ -63,8 +66,10 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.contenu-principale {
-    padding: 1em;
+.contenu-principal {
+    background-color: $color-fond;
+    border-radius: 2em 2em 0 0;
+    padding-bottom: 4em;
 }
 .entete {
     display: flex;
@@ -74,6 +79,7 @@ p {
     background-color: white;
     padding-left: 1em;
     margin-bottom: -1em;
+    background-color: $color-fond;
 
     & > i {
         align-self: center;
@@ -92,14 +98,14 @@ p {
     border: 1.5px solid $color-tertiaire;
 }
 .element-menu {
+    animation: element-menu 400ms;
     padding: 0.5em;
     border-radius: 1em;
-    margin-bottom: 1em;
     box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
     display: flex;
     justify-content: space-between;
     margin: 1em;
-
+    
     &__supplement {
         font-weight: lighter;
         font-size: 0.9em;
@@ -110,10 +116,78 @@ p {
         font-size: 0.9em;
         padding-right: 0.5em;
     }
+    &:hover {
+        .element-menu--anim {
+            background-color: $color-tertiaire;
+            width: 3.5em;
+            border-top-right-radius: 1em;
+            border-bottom-right-radius: 1em;
+            margin: -0.5em;
+            text-align: center;
+            // overflow: hidden;
+            position: relative;
+            visibility: visible;
+            // opacity: 1;
+            transform: translateX(0);
+            .fa-check-circle {  
+                position: relative;
+                visibility: visible;
+                // opacity: 1;
+                font-size: 1.5em;
+                color: white;
+                transform: rotate(0deg);
+            }
+        }
+    }
+    &--anim {
+        position: absolute;
+        visibility: hidden;
+        // opacity: 0;
+        transform: translateX(100%);
+        transition: all 330ms ease-in-out;
+        .fa-check-circle {
+            position: absolute;
+            visibility: hidden;
+            // opacity: 0;
+            transform: rotate(-1turn);
+            transition: all 280ms ease-out;
+        }
+    }
+}
+
+.element-menu-1 {
+    animation-delay: 50ms;
+}
+.element-menu-2 {
+    animation-delay: 100ms;
+}
+.element-menu-3 {
+    animation-delay: 150ms;
+}
+@keyframes element-menu {
+    0% {
+        transform-origin: bottom;
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    17% {
+        transform: translateY(90%);
+    }
+    46% {
+        transform: translateY(50%);
+        opacity: .5;
+    }
+    85% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 .bouton {
     text-align: center;
-    margin: 2em 0 3em 0;
+    margin-top: 2.5em;
+    
 }
 footer {
     background-color: darken($color-fond, 75%);
