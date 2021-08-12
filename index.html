@@ -14,79 +14,87 @@
 
     <body>
 
-        <header>
-                <img src="images/ohmyfood.png" alt="logo" class="logo">
-        </header>
+        <div class="loading-spinner"><i class="fas fa-spinner"></i></div>
+        <div class="contenu">
 
-        <section class="recherche">
-            <div class="localisation"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</div>
-            <h1 class="titre">Réserver le menu qui vous convient</h1>
-            <p class="soustitre">Découvrez des restaurants d'exception, séléctiones par nos soins.</p>
-            <button>Explorer nos restaurants</button>
-        </section>
-        
-        <section class="fonctionnement">
-            <h1 class="titre">Fonctionnement</h1>
-            <div class="etape"><span class="etape__num">1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</div>
-            <div class="etape"><span class="etape__num">2</span><i class="fas fa-list-ul"></i>Composez votre menu</div>
-            <div class="etape etape--active"><span class="etape__num">3</span><i class="fas fa-store"></i>Dégustez au restaurant</div>
-        </section>
+            <header>
+                    <img src="images/ohmyfood.png" alt="logo" class="logo">
+            </header>
 
-        <section class="restaurants">
-            <h1 class="titre">Restaurants</h1>
-            <a href="menu_palette.html" class="fiche-resto">
-                <div class="fiche-resto__image fiche-resto__image--gout">
-                    <div class="fiche-resto__etiquette">Nouveau</div>
-                </div>
-                <div class="fiche-resto__description">
-                    <div>
-                        <p class="nom-resto">La palette du goût</p>
-                        <p class="localisation-resto">Ménilmontant</p>
-                    </div>
-                    <span class="coeur"><i class="fas fa-heart"></i></span>
-                </div>
-            </a>
-            <a href="" class="fiche-resto">
-                <div class="fiche-resto__image fiche-resto__image--enchantee">
-                    <div class="fiche-resto__etiquette">Nouveau</div>
-                </div>
-                <div class="fiche-resto__description">
-                    <div>
-                        <p class="nom-resto">Na note enchantée</p>
-                        <p class="localisation-resto">Charonne</p>
-                    </div>
-                    <span class="coeur"><i class="far fa-heart"></i></span>
-                </div>
-            </a>
-            <a href="" class="fiche-resto">
-                <div class="fiche-resto__image fiche-resto__image--francaise"></div>
-                <div class="fiche-resto__description">
-                    <div>
-                        <p class="nom-resto">À la française</p>
-                        <p class="localisation-resto">Cité Rouge</p>
-                    </div>
-                    <span class="coeur"><i class="far fa-heart"></i></span>
-                </div>
-            </a>
-            <a href="" class="fiche-resto">
-                <div class="fiche-resto__image fiche-resto__image--sens"></div>
-                <div class="fiche-resto__description">
-                    <div>
-                        <p class="nom-resto">Le délice des sens</p>
-                        <p class="localisation-resto">Folie-Méricourt</p>
-                    </div>
-                    <span class="coeur"><i class="far fa-heart"></i></span>
-                </div>
-            </a>
-        </section>
+            <section class="recherche">
+                <div class="localisation"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</div>
+                <h1 class="titre">Réserver le menu qui vous convient</h1>
+                <p class="soustitre">Découvrez des restaurants d'exception, séléctiones par nos soins.</p>
+                <a href="">Explorer nos restaurants</a>
+            </section>
+            
+            <section class="fonctionnement">
+                <h1 class="titre">Fonctionnement</h1>
+                <div class="etape"><span class="etape__num">1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</div>
+                <div class="etape"><span class="etape__num">2</span><i class="fas fa-list-ul"></i>Composez votre menu</div>
+                <div class="etape etape--active"><span class="etape__num">3</span><i class="fas fa-store"></i>Dégustez au restaurant</div>
+            </section>
 
-        <footer>
-            <h2 class="titre titre--shrikhand">ohmyfood</h2>
-            <div><i class="fas fa-utensils"></i>Proposer un restaurant</div>
-            <div><i class="far fa-handshake"></i>Devenir partenaire</div>
-            <div class="footer-element">Mentions légales</div>
-            <div class="footer-element">Contact</div>
-        </footer>
+            <section class="restaurants">
+                <h1 class="titre">Restaurants</h1>
+                <div class="fiche-resto">
+                    <a href="menu_palette.html" >
+                        <div class="fiche-resto__image fiche-resto__image--gout">
+                            <div class="fiche-resto__etiquette">Nouveau</div>
+                        </div>
+                        <div class="fiche-resto__description">
+                            <p class="nom-resto">La palette du goût</p>
+                            <p class="localisation-resto">Ménilmontant</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="coeur"><i class="fas fa-heart"></i></div>
+                
+                <div class="fiche-resto">
+                    <a href="menu_note.html">
+                        <div class="fiche-resto__image fiche-resto__image--enchantee">
+                            <div class="fiche-resto__etiquette">Nouveau</div>
+                        </div>
+                        <div class="fiche-resto__description">
+                            <p class="nom-resto">La note enchantée</p>
+                            <p class="localisation-resto">Charonne</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="coeur"><i class="fas fa-heart"></i></div>
+                    
+                <div class="fiche-resto">
+                    <a href="menu_francaise">
+                        <div class="fiche-resto__image fiche-resto__image--francaise"></div>
+                        <div class="fiche-resto__description">
+                            <p class="nom-resto">À la française</p>
+                            <p class="localisation-resto">Cité Rouge</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="coeur"><i class="fas fa-heart"></i></div>
+                    
+                <div class="fiche-resto">
+                    <a href="" class="fiche-resto">
+                        <div class="fiche-resto__image fiche-resto__image--sens"></div>
+                        <div class="fiche-resto__description">
+                            <p class="nom-resto">Le délice des sens</p>
+                            <p class="localisation-resto">Folie-Méricourt</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="coeur"><i class="fas fa-heart"></i></div>
+            </section>
+
+            <footer>
+                <h2 class="titre titre--shrikhand">ohmyfood</h2>
+                <div><i class="fas fa-utensils"></i>Proposer un restaurant</div>
+                <div><i class="far fa-handshake"></i>Devenir partenaire</div>
+                <div class="footer-element">Mentions légales</div>
+                <div class="footer-element">Contact</div>
+            </footer>
+
+        </div>
 
     </body>
 </html>
