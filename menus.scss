@@ -3,6 +3,8 @@ $color-secondaire: #FF79DA;
 $color-tertiaire: #99E2D0;
 $color-fond: #f9f9f9;
 
+$ombre-default: 6px 6px 20px rgba(128, 128, 128, 0.5);
+
 body, html {
     max-width: 414px;
     margin: auto;
@@ -90,29 +92,36 @@ p {
     }
 }
 .element-menu {
-    display: table;
+    display: inline-flex;
     animation: element-menu 300ms;
     opacity: 0;
     animation-fill-mode: forwards; /* Arrete l'etat sur l'etat final de l'animation au lieu de l'etat définit dans l'élement. Chez moi ça regle le problème d'opacity:0 sur l'element-menu */
     overflow: hidden;
     border-radius: 1em;
-    box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
+    box-shadow: $ombre-default; 
     width: 90%;
     margin: 1em;
+    &__info {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
     &__description {
         padding: 0.5em 0.8em;
     }
     &__supplement {
+        // max-width: 290px;
+        width: 100%;
+        display: inline-block;
         font-weight: lighter;
         font-size: 0.9em;
         padding-top: 0.3em;
         text-overflow: ellipsis;
         overflow: hidden;
-        // white-space: nowrap;
+        white-space: nowrap;
     }
-    &__prix {
-        display: table-cell;
-        vertical-align: bottom;
+    &__prix:nth-child(2) {
+        align-self: flex-end;
         text-align: right;
         font-size: 0.9em;
         padding-right: 1.5em;
@@ -120,6 +129,7 @@ p {
     }
     &:hover {
         .element-menu--anim {
+            display: inline-block;
             background-color: $color-tertiaire;
             width: 3em;
             text-align: center;
@@ -133,13 +143,13 @@ p {
                 font-size: 1.2em;
                 color: white;
                 margin-right: 0.5em;
+                margin-top: 50%;
+                margin-bottom: 50%;
                 transform: rotate(0deg);
             }
         }
     }
     &--anim {
-        display: table-cell;
-        vertical-align: middle;
         transform: translateX(100%);
         transition: transform 400ms ease-in-out;
         .fa-check-circle {
@@ -192,7 +202,7 @@ p {
     font-weight: normal;
     &:hover {
         background: radial-gradient(ellipse at top, $color-secondaire, $color-primaire);
-        box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
+        box-shadow: $ombre-default;
     }
 }
 
