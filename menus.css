@@ -50,11 +50,11 @@ p {
   height: 1.6em;
 }
 
-.image {
-  background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+.image > img {
   height: 250px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contenu-principal {
@@ -70,9 +70,9 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
   margin-top: -2em;
   border-radius: 2em 2em 0 0;
-  background-color: white;
   padding-left: 1em;
   margin-bottom: -1em;
   background-color: #f9f9f9;
@@ -265,6 +265,11 @@ p {
 .element-menu-9 {
   -webkit-animation-delay: 810ms;
           animation-delay: 810ms;
+}
+
+.element-menu-10 {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
 .bouton {
