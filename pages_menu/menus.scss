@@ -63,6 +63,13 @@ p {
         align-self: center;
         padding-right: 1em;
         font-size: 1.5em;
+        color: $color-fond;
+        text-shadow: 0 0 3px darken($color-fond, 100%);
+        transition: all .5s ease-out;
+        &:hover {
+            text-shadow: none;
+            color: $color-primaire;
+        }
     }
 }
 .titre--restaurant {

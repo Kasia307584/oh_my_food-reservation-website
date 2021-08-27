@@ -175,11 +175,12 @@ header {
   font-size: 0.8em;
 }
 
-.etape--active {
+.etape--active:hover {
+  cursor: pointer;
   background-color: #f4eefc;
 }
 
-.etape--active > i {
+.etape--active:hover > i {
   color: #9356DC;
 }
 
@@ -305,18 +306,18 @@ footer > div > .fa-handshake {
   body, html {
     max-width: 1024px;
   }
-  .article-2-sections {
+  .deux-sections {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
   }
-  .article-2-sections .fonctionnement {
+  .deux-sections .fonctionnement {
     margin-left: 1em;
     margin-top: 1em;
   }
-  .article-2-sections .restaurants {
+  .deux-sections .restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -325,7 +326,7 @@ footer > div > .fa-handshake {
     margin: 1em;
     background: white;
   }
-  .article-2-sections .restaurants .fiche-resto {
+  .deux-sections .restaurants .fiche-resto {
     width: 100%;
   }
 }
@@ -334,18 +335,18 @@ footer > div > .fa-handshake {
   body, html {
     max-width: 1440px;
   }
-  .article-2-sections {
+  .deux-sections {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
     grid-gap: 1em;
   }
-  .article-2-sections .fonctionnement {
+  .deux-sections .fonctionnement {
     margin-left: 1em;
     margin-top: 1em;
   }
-  .article-2-sections .restaurants {
+  .deux-sections .restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -353,17 +354,17 @@ footer > div > .fa-handshake {
         flex-wrap: wrap;
     background: white;
   }
-  .article-2-sections .restaurants .titre {
+  .deux-sections .restaurants .titre {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .article-2-sections .restaurants .fiche-resto {
+  .deux-sections .restaurants .fiche-resto {
     width: 45%;
   }
-  .article-2-sections .restaurants .fiche-resto__image {
+  .deux-sections .restaurants .fiche-resto__image {
     background-position: 0;
   }
-  .article-2-sections .restaurants .fiche-resto__image--enchantee {
+  .deux-sections .restaurants .fiche-resto__image--enchantee {
     background-position: 0;
   }
 }

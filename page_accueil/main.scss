@@ -133,9 +133,12 @@ header {
         font-size: 0.8em;
     }
     &--active {
-        background-color: lighten($color-primaire, 36%);
-        & > i {
-            color: $color-primaire;
+        &:hover {
+            cursor: pointer;
+            background-color: lighten($color-primaire, 36%);
+            & > i {
+                color: $color-primaire;
+            }
         }
     }
 }
@@ -240,7 +243,7 @@ footer {
         max-width: 1024px;
     }
 
-    .article-2-sections {
+    .deux-sections {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
@@ -266,7 +269,7 @@ footer {
         max-width: 1440px;
     }
 
-    .article-2-sections {
+    .deux-sections {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-gap: 1em;

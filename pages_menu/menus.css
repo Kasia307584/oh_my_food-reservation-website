@@ -84,6 +84,15 @@ p {
       align-self: center;
   padding-right: 1em;
   font-size: 1.5em;
+  color: #f9f9f9;
+  text-shadow: 0 0 3px black;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.entete > i:hover {
+  text-shadow: none;
+  color: #9356DC;
 }
 
 .titre--restaurant {
