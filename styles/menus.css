@@ -2,7 +2,7 @@
 body, html {
   max-width: 414px;
   margin: auto;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 1em;
   font-weight: bold;
 }
@@ -13,7 +13,7 @@ a {
 }
 
 h1, h2 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   font-weight: lighter;
 }
 
@@ -22,30 +22,20 @@ p {
 }
 
 .fleche {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   padding: 1.5em 1em 1.2em 1em;
 }
-
 .fleche > i {
   font-size: 1.2em;
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: -2.5em;
   padding-bottom: 0.5em;
 }
-
 .logo > img {
   height: 1.6em;
 }
@@ -64,12 +54,8 @@ p {
 }
 
 .entete {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   position: relative;
   margin-top: -2em;
   border-radius: 2em 2em 0 0;
@@ -77,19 +63,14 @@ p {
   margin-bottom: -1em;
   background-color: #f9f9f9;
 }
-
 .entete > i {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   padding-right: 1em;
   font-size: 1.5em;
   color: #f9f9f9;
   text-shadow: 0 0 3px black;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
 }
-
 .entete > i:hover {
   text-shadow: none;
   color: #9356DC;
@@ -112,61 +93,32 @@ p {
   background: #99E2D0;
 }
 
-@-webkit-keyframes element-menu {
-  from {
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 @keyframes element-menu {
   from {
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    transform-origin: bottom;
+    transform: translateY(100%);
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
-
 .element-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-animation: element-menu 300ms;
-          animation: element-menu 300ms;
+  justify-content: space-between;
+  animation: element-menu 300ms;
   opacity: 0;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  /* Il arrete l'etat sur l'etat final de l'animation au lieu de l'etat définit dans l'élement. Chez moi ça regle le problème d'opacity:0 sur l'element-menu */
+  animation-fill-mode: forwards; /* Il arrete l'etat sur l'etat final de l'animation au lieu de l'etat définit dans l'élement. Chez moi ça regle le problème d'opacity:0 sur l'element-menu */
   overflow: hidden;
   border-radius: 1em;
-  -webkit-box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
-          box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
+  box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
   width: 90%;
   margin: 1em;
 }
-
 .element-menu__description {
-  -webkit-transition: 1s;
   transition: 1s;
   padding: 0.7em 0 0.5em 0.7em;
 }
-
 .element-menu__description .supplement-plat {
   width: 100%;
   display: inline-block;
@@ -177,25 +129,18 @@ p {
   overflow: hidden;
   white-space: nowrap;
 }
-
 .element-menu__anim {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: -3em;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .element-menu__anim .prix {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   text-align: right;
   font-size: 0.9em;
   padding-right: 1.5em;
   padding-bottom: 0.8em;
 }
-
 .element-menu__anim .checkbox {
   background-color: #99E2D0;
   width: 3em;
@@ -203,82 +148,62 @@ p {
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
 }
-
 .element-menu__anim .checkbox .fa-check-circle {
   font-size: 1.2em;
   color: white;
   margin-top: 50%;
-  -webkit-transform: rotate(-1.5turn);
-          transform: rotate(-1.5turn);
-  -webkit-transition: -webkit-transform 600ms ease-out;
-  transition: -webkit-transform 600ms ease-out;
+  transform: rotate(-1.5turn);
   transition: transform 600ms ease-out;
-  transition: transform 600ms ease-out, -webkit-transform 600ms ease-out;
 }
-
 .element-menu:hover .element-menu__description {
   width: 65%;
 }
-
 .element-menu:hover .element-menu__anim {
   margin-right: 0;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .element-menu:hover .element-menu__anim .fa-check-circle {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .element-menu-1 {
-  -webkit-animation-delay: 90ms;
-          animation-delay: 90ms;
+  animation-delay: 90ms;
 }
 
 .element-menu-2 {
-  -webkit-animation-delay: 180ms;
-          animation-delay: 180ms;
+  animation-delay: 180ms;
 }
 
 .element-menu-3 {
-  -webkit-animation-delay: 270ms;
-          animation-delay: 270ms;
+  animation-delay: 270ms;
 }
 
 .element-menu-4 {
-  -webkit-animation-delay: 360ms;
-          animation-delay: 360ms;
+  animation-delay: 360ms;
 }
 
 .element-menu-5 {
-  -webkit-animation-delay: 450ms;
-          animation-delay: 450ms;
+  animation-delay: 450ms;
 }
 
 .element-menu-6 {
-  -webkit-animation-delay: 540ms;
-          animation-delay: 540ms;
+  animation-delay: 540ms;
 }
 
 .element-menu-7 {
-  -webkit-animation-delay: 630ms;
-          animation-delay: 630ms;
+  animation-delay: 630ms;
 }
 
 .element-menu-8 {
-  -webkit-animation-delay: 720ms;
-          animation-delay: 720ms;
+  animation-delay: 720ms;
 }
 
 .element-menu-9 {
-  -webkit-animation-delay: 810ms;
-          animation-delay: 810ms;
+  animation-delay: 810ms;
 }
 
 .element-menu-10 {
-  -webkit-animation-delay: 900ms;
-          animation-delay: 900ms;
+  animation-delay: 900ms;
 }
 
 .bouton {
@@ -294,11 +219,9 @@ p {
   font-size: 0.9em;
   font-weight: normal;
 }
-
 .bouton a:hover {
   background: radial-gradient(ellipse at top, #FF79DA, #9356DC);
-  -webkit-box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
-          box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
+  box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
 }
 
 footer {
@@ -306,24 +229,19 @@ footer {
   color: white;
   padding: 1em 1em 3em 1em;
 }
-
 footer > div {
   font-size: 0.9em;
   margin-top: 0.5em;
 }
-
 footer > div > i {
   padding-right: 0.5em;
 }
-
 footer > .footer-element {
   font-weight: lighter;
 }
-
 footer > div > .fa-utensils {
   padding-right: 0.6em;
 }
-
 footer > div > .fa-handshake {
   font-size: 0.8em;
 }
@@ -340,8 +258,6 @@ footer > div > .fa-handshake {
     background-position: center center;
   }
   .groupement-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .element-menu {
@@ -355,5 +271,4 @@ footer > div > .fa-handshake {
   .element-menu__anim .checkbox .fa-check-circle {
     margin-top: 100%;
   }
-}
-/*# sourceMappingURL=menus.css.map */
+}/*# sourceMappingURL=menus.css.map */
